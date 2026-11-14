@@ -1,8 +1,8 @@
 import sys
-from math import sqrt
+from math import hypot
 
 def euclidean_distance(p1, p2):
-    return sqrt((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2)
+    return hypot(p2[0] - p1[0], p2[1] - p1[1])
 
 def get_points(n):
     points = []
